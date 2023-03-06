@@ -3,6 +3,7 @@ Implementați în Verilog un circuit secvențial sincron care ascunde un mesaj s
 
 
 Precizari initiale:
+Implementarea cerinteie si a automatului pentru rezolvarea acesteia este in fisierul process.v
 Automatul implementat pentru aceasta tema are 31 de stari, pe care le voi explica succinct mai jos. Numarul de stari este ridicat deoarece nu am refolosit stari anterioare in dezvoltarea takurilor, astfel ca o parte din ele sunt copiate si replasate in alta parte de cod. 
 Variabila done  este o solutie pe care eu am folosit-o pentru a impiedica formarea de bucle infinite sau implementarea de mai multe ori, in mod eronat, a unei instuctiuni ( de exemplu a unui if, in care se incrementeaza un semnal). Cu o stare precedenta folosorii lui, done primeste valoarea 1, valoare ce este ulterior schimbata in 0 in starea urmatoare, ca urmare a efectuarii unei anumite instructiuni. done==1 este o conditie care se intalneste in multe constructii if de-a lungul implementarii.
 Variabile folosite pentru fiecare task sunt explicate prim comentarii in zona de  inceput a modulului.
